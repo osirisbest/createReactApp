@@ -8,6 +8,7 @@ class Comp extends Component {
     return (
       <div className="App">
         <h1>{this.props.test}</h1>
+        <h1>{this.props.name}</h1>
       </div>
     );
   }
@@ -16,5 +17,9 @@ class Comp extends Component {
 Comp.propTypes={
     test: PropTypes.string
 }
+
+Comp.defaultProps = {
+    name: 'DefName'
+  };
 
 export default Comp;
