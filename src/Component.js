@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 //import logo from './logo.svg';
 import './App.css';
 
@@ -10,6 +11,10 @@ class Comp extends Component {
       </div>
     );
   }
+}
+
+Comp.propTypes={
+    test: PropTypes.string
 }
 
 export default Comp;
